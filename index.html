@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jarred D. Duero | Portfolio</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+
+    <canvas id="spaceCanvas"></canvas>
+
+    <div class="nebula nebula-one"></div>
+    <div class="nebula nebula-two"></div>
+    <div class="nebula nebula-three"></div>
+
+    <div id="clickLight"></div>
+
+
+    <section id="loadingScreen" class="screen">
+
+        <div class="loading-content">
+
+            <div class="loading-diamond">
+
+                <div class="diamond-core"></div>
+
+                <div class="diamond-ring"></div>
+
+                <div class="diamond-ring ring-two"></div>
+
+                <div class="diamond-ring ring-three"></div>
+
+            </div>
+
+            <p class="system-label">
+                DIGITAL PORTFOLIO SYSTEM
+            </p>
+
+            <h1 class="loading-title">
+                DUERO
+                <span>JARRED D.</span>
+            </h1>
+
+            <p id="loadingText">
+                INITIALIZING GALAXY...
+            </p>
+
+            <div class="loading-bar">
+
+                <div id="loadingProgress"></div>
+
+            </div>
+
+            <div class="loading-bottom">
+
+                <span>
+                    SYSTEM STATUS
+                </span>
+
+                <strong>
+                    <span id="loadingPercent">0</span>%
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="welcomeScreen" class="screen hidden">
+
+        <div class="welcome-content">
+
+            <div class="intro-orbit orbit-intro-one"></div>
+            <div class="intro-orbit orbit-intro-two"></div>
+
+            <div class="welcome-diamond">
+
+                <div class="welcome-diamond-inner">
+                    J
+                </div>
+
+            </div>
+
+            <p class="small-intro">
+                WELCOME TO MY DIGITAL SPACE
+            </p>
+
+            <h1>
+                Welcome To
+                <span>My Portfolio</span>
+            </h1>
+
+            <p class="welcome-description">
+                Discover my story, education, interests,
+                passion and future goals.
+            </p>
+
+            <button id="enterButton" class="main-button">
+
+                <span>
+                    ENTER MY WEBSITE
+                </span>
+
+                <strong>
+                    →
+                </strong>
+
+            </button>
+
+            <div class="press-hint">
+                CLICK TO ENTER
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <main id="portfolio" class="hidden">
+
+
+        <header class="top-bar">
+
+            <div class="logo">
+
+                <div class="mini-diamond"></div>
+
+                <div class="logo-text">
+
+                    <strong>
+                        DUERO
+                    </strong>
+
+                    <span>
+                        JARRED D.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="page-status">
+
+                <span class="status-label">
+                    PAGE
+                </span>
+
+                <div
+                    class="page-number"
+                    id="pageNumber"
+                >
+                    01
+                </div>
+
+                <div class="status-line">
+
+                    <div
+                        id="indicatorProgress"
+                    ></div>
+
+                </div>
+
+                <span id="pageName">
+                    HOME
+                </span>
+
+            </div>
+
+
+            <button
+                id="themeToggle"
+                class="theme-toggle"
+                aria-label="Toggle light and dark mode"
+            >
+                <span id="themeIcon">
+                    ☾
+                </span>
+            </button>
+
+        </header>
+
+
+        <div class="page-dots">
+
+            <button
+                class="dot active"
+                data-page="home"
+            >
+                <span>01</span>
+            </button>
+
+            <button
+                class="dot"
+                data-page="about"
+            >
+                <span>02</span>
+            </button>
+
+            <button
+                class="dot"
+                data-page="education"
+            >
+                <span>03</span>
+            </button>
+
+            <button
+                class="dot"
+                data-page="interests"
+            >
+                <span>04</span>
+            </button>
+
+            <button
+                class="dot"
+                data-page="dream"
+            >
+                <span>05</span>
+            </button>
+
+            <button
+                class="dot"
+                data-page="personal"
+            >
+                <span>06</span>
+            </button>
+
+            <button
+                class="dot"
+                data-page="contact"
+            >
+                <span>07</span>
+            </button>
+
+            <button
+                class="dot"
+                data-page="finish"
+            >
+                <span>08</span>
+            </button>
+
+        </div>
+
+
+        <section
+            id="home"
+            class="portfolio-page active-page"
+        >
+
+            <div class="page-background-number">
+                01
+            </div>
+
+            <div class="home-container">
+
+                <div class="home-text reveal-left">
+
+                    <div class="section-tag">
+                        <span></span>
+                        PAGE 01 / HOME
+                    </div>
+
+                    <p class="hello">
+                        HELLO, I'M
+                    </p>
+
+                    <h1>
+                        DUERO
+                        <span>JARRED D.</span>
+                    </h1>
+
+                    <p class="home-description">
+                        Welcome to my personal portfolio.
+                        This website is a digital representation
+                        of my journey, interests, education,
+                        dreams and goals.
+                    </p>
+
+                    <button
+                        class="proceed-button"
+                        data-next="about"
+                    >
+                        <span>
+                            EXPLORE MY STORY
+                        </span>
+
+                        <strong>
+                            →
+                        </strong>
+                    </button>
+
+                </div>
+
+
+                <div class="home-image-area reveal-right">
+
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+                    <div class="orbit orbit-three"></div>
+
+                    <div class="diamond-photo">
+
+                        <div class="photo-glow"></div>
+
+                        <div class="photo-border">
+
+                            <img
+                                src="./jarred.jpg"
+                                alt="Jarred D. Duero"
+                                class="profile-image"
+                            >
+
+                        </div>
+
+                    </div>
+
+                    <div class="image-label">
+
+                        <span>
+                            J.D.D
+                        </span>
+
+                        <small>
+                            BSIT STUDENT
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section
+            id="about"
+            class="portfolio-page"
+        >
+
+            <div class="page-background-number">
+                02
+            </div>
+
+            <div class="page-container">
+
+                <div class="section-heading reveal-up">
+
+                    <div class="section-tag">
+                        <span></span>
+                        PAGE 02 / ABOUT
+                    </div>
+
+                    <h2>
+                        About
+                        <span>Me</span>
+                    </h2>
+
+                    <p>
+                        Get to know me beyond my name.
+                    </p>
+
+                </div>
+
+
+                <div class="about-layout">
+
+                    <div
+                        class="about-card large-card reveal-left"
+                    >
+
+                        <div class="card-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Who Am I?
+                        </h3>
+
+                        <p>
+                            My name is
+                            <strong>
+                                Jarred D. Duero
+                            </strong>.
+                            I am 18 years old and currently
+                            studying Bachelor of Science
+                            in Information Technology.
+                        </p>
+
+                        <p>
+                            I am interested in technology,
+                            sports, chess and music. I also
+                            believe that discipline, effort
+                            and continuous learning can help
+                            me reach my goals.
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        class="about-card reveal-right"
+                    >
+
+                        <div class="card-number">
+                            02
+                        </div>
+
+                        <h3>
+                            My Birthday
+                        </h3>
+
+                        <p>
+                            March 26, 2008
+                        </p>
+
+                        <div class="mini-line"></div>
+
+                        <span class="quote">
+                            "Every year is another chapter
+                            of the journey."
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="proceed-button centered-button"
+                    data-next="education"
+                >
+                    <span>
+                        CONTINUE TO EDUCATION
+                    </span>
+
+                    <strong>
+                        →
+                    </strong>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section
+            id="education"
+            class="portfolio-page"
+        >
+
+            <div class="page-background-number">
+                03
+            </div>
+
+            <div class="page-container">
+
+                <div class="section-heading reveal-up">
+
+                    <div class="section-tag">
+                        <span></span>
+                        PAGE 03 / EDUCATION
+                    </div>
+
+                    <h2>
+                        My
+                        <span>Education</span>
+                    </h2>
+
+                    <p>
+                        The schools and experiences that
+                        helped shape me.
+                    </p>
+
+                </div>
+
+
+                <div class="education-timeline">
+
+                    <div class="timeline-line"></div>
+
+
+                    <div
+                        class="education-item reveal-left"
+                    >
+
+                        <div class="timeline-point"></div>
+
+                        <div class="education-content">
+
+                            <span class="education-number">
+                                01
+                            </span>
+
+                            <h3>
+                                University of Science and
+                                Technology of Southern Philippines
+                            </h3>
+
+                            <p class="education-course">
+                                Bachelor of Science in
+                                Information Technology
+                            </p>
+
+                            <div class="education-details">
+
+                                <span>
+                                    BSIT-1R14
+                                </span>
+
+                                <span>
+                                    1st Year
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="education-item reveal-right"
+                    >
+
+                        <div class="timeline-point"></div>
+
+                        <div class="education-content">
+
+                            <span class="education-number">
+                                02
+                            </span>
+
+                            <h3>
+                                Talakag National High School
+                            </h3>
+
+                            <p class="education-course">
+                                Basketball Athlete
+                            </p>
+
+                            <div class="education-details">
+
+                                <span>
+                                    Basketball
+                                </span>
+
+                                <span>
+                                    DIVISION
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="proceed-button centered-button"
+                    data-next="interests"
+                >
+                    <span>
+                        CONTINUE TO INTERESTS
+                    </span>
+
+                    <strong>
+                        →
+                    </strong>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section
+            id="interests"
+            class="portfolio-page"
+        >
+
+            <div class="page-background-number">
+                04
+            </div>
+
+            <div class="page-container">
+
+                <div class="section-heading reveal-up">
+
+                    <div class="section-tag">
+                        <span></span>
+                        PAGE 04 / INTERESTS
+                    </div>
+
+                    <h2>
+                        My
+                        <span>Interests</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="interest-grid">
+
+
+                    <!-- BASKETBALL -->
+
+                    <div
+                        class="interest-card reveal-up"
+                    >
+
+                        <div class="interest-icon">
+                            🏀
+                        </div>
+
+                        <div class="interest-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Basketball
+                        </h3>
+
+                        <p>
+                            Basketball is one of my passions.
+                            I played as a basketball athlete
+                            at Talakag National High School.
+                        </p>
+
+                        <span>
+                            ATHLETE / DIVISION
+                        </span>
+
+                    </div>
+
+
+                    <!-- CHESS -->
+
+                    <div
+                        class="interest-card reveal-up delay-one"
+                    >
+
+                        <div class="interest-icon">
+                            ♟
+                        </div>
+
+                        <div class="interest-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Chess
+                        </h3>
+
+                        <p>
+                            I enjoy playing chess because it
+                            challenges my thinking, patience
+                            and strategy.
+                        </p>
+
+                        <span>
+                            STRATEGY / FOCUS
+                        </span>
+
+                    </div>
+
+
+                    <!-- MUSIC -->
+
+                    <div
+                        class="interest-card reveal-up delay-two"
+                    >
+
+                        <div class="interest-icon">
+                            ♪
+                        </div>
+
+                        <div class="interest-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Music
+                        </h3>
+
+                        <p>
+                            I love music because it brings
+                            emotion, energy and inspiration
+                            into everyday life.
+                        </p>
+
+                        <span>
+                            RHYTHM / EXPRESSION
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="proceed-button centered-button"
+                    data-next="dream"
+                >
+                    <span>
+                        DISCOVER MY DREAM
+                    </span>
+
+                    <strong>
+                        →
+                    </strong>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section
+            id="dream"
+            class="portfolio-page"
+        >
+
+            <div class="page-background-number">
+                05
+            </div>
+
+            <div class="page-container">
+
+                <div class="section-heading reveal-up">
+
+                    <div class="section-tag police-tag">
+                        <span></span>
+                        PAGE 05 / MY DREAM
+                    </div>
+
+                    <h2>
+                        My Future
+                        <span>Dream</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="police-layout">
+
+
+                    <!-- POLICE BADGE -->
+
+                    <div
+                        class="badge-area reveal-left"
+                    >
+
+                        <div class="badge-orbit"></div>
+
+                        <div class="police-badge">
+
+                            <div class="badge-star">
+                                ★
+                            </div>
+
+                            <div class="badge-text">
+                                FUTURE
+                            </div>
+
+                            <strong>
+                                LAW
+                            </strong>
+
+                            <small>
+                                ENFORCEMENT
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DREAM CONTENT -->
+
+                    <div
+                        class="dream-content reveal-right"
+                    >
+
+                        <span class="dream-label">
+                            CAREER GOAL
+                        </span>
+
+                        <h3>
+                            I Want To Be
+                            <strong>
+                                A Police Officer
+                            </strong>
+                        </h3>
+
+                        <p>
+                            One of my dreams for the future
+                            is to become a police officer.
+                            I want to serve the community,
+                            protect people and contribute
+                            to peace and safety.
+                        </p>
+
+                        <div class="police-values">
+
+                            <div>
+                                <strong>
+                                    01
+                                </strong>
+
+                                <span>
+                                    SERVICE
+                                </span>
+                            </div>
+
+                            <div>
+                                <strong>
+                                    02
+                                </strong>
+
+                                <span>
+                                    DISCIPLINE
+                                </span>
+                            </div>
+
+                            <div>
+                                <strong>
+                                    03
+                                </strong>
+
+                                <span>
+                                    COURAGE
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="proceed-button centered-button"
+                    data-next="personal"
+                >
+                    <span>
+                        CONTINUE TO PERSONAL
+                    </span>
+
+                    <strong>
+                        →
+                    </strong>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section
+            id="personal"
+            class="portfolio-page"
+        >
+
+            <div class="page-background-number">
+                06
+            </div>
+
+            <div class="page-container">
+
+                <div class="section-heading reveal-up">
+
+                    <div class="section-tag">
+                        <span></span>
+                        PAGE 06 / PERSONAL
+                    </div>
+
+                    <h2>
+                        Personal
+                        <span>Information</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="personal-grid">
+
+
+                    <div
+                        class="info-card reveal-left"
+                    >
+                        <span>
+                            FULL NAME
+                        </span>
+
+                        <strong>
+                            Jarred D. Duero
+                        </strong>
+                    </div>
+
+
+                    <div
+                        class="info-card reveal-right"
+                    >
+                        <span>
+                            AGE
+                        </span>
+
+                        <strong>
+                            18 Years Old
+                        </strong>
+                    </div>
+
+
+                    <div
+                        class="info-card reveal-left"
+                    >
+                        <span>
+                            DATE OF BIRTH
+                        </span>
+
+                        <strong>
+                            March 26, 2008
+                        </strong>
+                    </div>
+
+
+                    <div
+                        class="info-card reveal-right"
+                    >
+                        <span>
+                            PROGRAM
+                        </span>
+
+                        <strong>
+                            BSIT-1R14
+                        </strong>
+                    </div>
+
+
+                    <div
+                        class="info-card reveal-left"
+                    >
+                        <span>
+                            SCHOOL
+                        </span>
+
+                        <strong>
+                            University of Science and
+                            Technology of Southern Philippines
+                        </strong>
+                    </div>
+
+
+                    <div
+                        class="info-card reveal-right"
+                    >
+                        <span>
+                            ADDRESS
+                        </span>
+
+                        <strong>
+                            Purok-4, San Isidro,
+                            Talakag, Bukidnon
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="proceed-button centered-button"
+                    data-next="contact"
+                >
+                    <span>
+                        GO TO CONTACT
+                    </span>
+
+                    <strong>
+                        →
+                    </strong>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section
+            id="contact"
+            class="portfolio-page"
+        >
+
+            <div class="page-background-number">
+                07
+            </div>
+
+            <div class="page-container contact-container">
+
+                <div class="section-heading reveal-up">
+
+                    <div class="section-tag">
+                        <span></span>
+                        PAGE 07 / CONTACT
+                    </div>
+
+                    <h2>
+                        Let's
+                        <span>Connect</span>
+                    </h2>
+
+                    <p>
+                        You can reach me through my
+                        contact information or social media.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-layout">
+
+
+                    <!-- PHONE -->
+
+                    <div
+                        class="contact-card reveal-left"
+                    >
+
+                        <div class="contact-icon">
+                            ☎
+                        </div>
+
+                        <span>
+                            PHONE
+                        </span>
+
+                        <h3>
+                            09267952016
+                        </h3>
+
+                    </div>
+
+
+                    <!-- FACEBOOK -->
+
+                    <a
+                        href="https://www.facebook.com/rred.duero/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card facebook-card reveal-right"
+                    >
+
+                        <div class="contact-icon">
+                            f
+                        </div>
+
+                        <span>
+                            SOCIAL MEDIA
+                        </span>
+
+                        <h3>
+                            Facebook
+                        </h3>
+
+                        <p>
+                            Open my Facebook profile →
+                        </p>
+
+                    </a>
+
+                </div>
+
+
+                <button
+                    class="proceed-button centered-button"
+                    data-next="finish"
+                >
+                    <span>
+                        FINISH PORTFOLIO
+                    </span>
+
+                    <strong>
+                        →
+                    </strong>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section
+            id="finish"
+            class="portfolio-page"
+        >
+
+            <div class="finish-container reveal-up">
+
+                <div class="final-diamond">
+
+                    <div class="final-diamond-inner">
+                        J
+                    </div>
+
+                </div>
+
+
+                <div class="section-tag centered-tag">
+
+                    <span></span>
+
+                    FINAL PAGE
+
+                    <span></span>
+
+                </div>
+
+
+                <h2>
+                    Thank You
+                    <span>For Visiting</span>
+                </h2>
+
+
+                <p>
+                    This is the end of my portfolio,
+                    but only the beginning of my journey.
+                </p>
+
+
+                <div class="finish-line"></div>
+
+
+                <button
+                    id="restartButton"
+                    class="proceed-button"
+                >
+
+                    <span>
+                        RESTART PORTFOLIO
+                    </span>
+
+                    <strong>
+                        ↻
+                    </strong>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- KEYBOARD HINT -->
+
+        <div class="keyboard-hint">
+
+            <span>SPACE</span>
+
+            or
+
+            <span>→</span>
+
+            to continue
+
+        </div>
+
+
+    </main>
+
+</body>
+</html>
